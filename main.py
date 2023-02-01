@@ -43,18 +43,25 @@ def select_operation(message):
         bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_sum)
     elif message.text == "Subtraction":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_subtraction)
     elif message.text == "Multiplication":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_multiplication)
     elif message.text == "Division":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_division)
     elif message.text == "Exponentiation":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_exponentiation)
     elif message.text == "Finding root":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_root)
     elif message.text == "Remainder of division":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_remainde_of_division)
     elif message.text == "Integer division":
+        bot.send_message(message.chat.id, ask_user)
         bot.register_next_step_handler(message, calc_integer_division)
     else:
         bot.send_message(message.chat.id, 'Please, click button')
